@@ -1,7 +1,6 @@
 # Hybrid Warfare & Malware Analysis CTF Dashboard
 
 Dashboard statica per una lezione/laboratorio CTF di base su **Hybrid Warfare** e **Malware Analysis**, ispirata allo stile operativo di TRIDENT SHIELD.
-
 L'obiettivo e' guidare gli studenti nell'analisi di una campagna ibrida simulata, nella classificazione delle evidenze per dominio e nella validazione progressiva delle risposte tramite flag.
 
 ## Funzioni principali
