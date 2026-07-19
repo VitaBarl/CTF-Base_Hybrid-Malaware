@@ -121,7 +121,6 @@ Per pubblicare la dashboard:
 ```text
 Settings -> Pages -> Deploy from branch
 ```
-
 4. Selezionare il branch e la cartella root.
 5. Aprire l'URL pubblicato da GitHub Pages.
 
