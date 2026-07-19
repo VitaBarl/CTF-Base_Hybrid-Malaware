@@ -1,0 +1,16 @@
+OSINT IMAGE REVIEW
+
+Image A:
+Claim: drone hovering over coalition pier.
+Finding: shadows match 2025 public imagery, not current weather.
+Confidence: manipulated/reused.
+
+Image B:
+Claim: smoke near logistics gate.
+Finding: consistent with scheduled maintenance burn notice.
+Confidence: benign context.
+
+Image C:
+Claim: FRAGO screenshot.
+Finding: font and metadata differ from official template.
+Confidence: manipulated document.

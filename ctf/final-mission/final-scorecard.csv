@@ -1,0 +1,6 @@
+dimension,weight,max_points,evidence_required
+Mission Success,30,30,mission remains operational and patrol/rescue tasks continue
+Detection Time,20,20,initial access and C2 detected before irreversible impact
+Incident Response,20,20,isolation credential reset IOC block and restoration completed
+Cyber-Social Impact Reduction,20,20,false content corrected and crew confidence restored
+Team Coordination,10,10,roles synchronized and decisions documented

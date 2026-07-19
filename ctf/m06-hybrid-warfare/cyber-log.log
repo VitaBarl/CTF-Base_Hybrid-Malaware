@@ -1,0 +1,5 @@
+2026-07-08T03:17:31Z OPS-WS-17 powershell encoded command
+2026-07-08T03:21:08Z OPS-WS-17 beacon sync-mediterranean-control.example
+2026-07-08T04:02:55Z FleetNavShare FRAGO-219A.pdf modified
+2026-07-08T04:29:44Z AIS gateway primary rejected malformed NMEA burst src=10.24.12.80
+2026-07-08T04:30:02Z AIS gateway primary accepted backup feed with stale signature

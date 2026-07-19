@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard base CTF per Hybrid Warfare e Malware Analysis">
+  <title>CTF Base - Hybrid Warfare & Malware Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">CTF Base Dashboard</p>
+      <p class="program-title">Cyber-Social Security</p>
+      <h1>HYBRID / MALWARE</h1>
+      <p class="subtitle">Dashboard didattica in stile TRIDENT SHIELD per monitorare moduli, evidenze, timeline e punteggio dei domini Cyber, Information, Cognitive e Physical.</p>
+      <nav class="page-links" aria-label="Sezioni dashboard">
+        <a href="#overview">Overview</a>
+        <a href="#moduli">Moduli</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#registro">Registro</a>
+        <a href="PLAYBOOK_RISOLUZIONE.md" target="_blank" rel="noopener noreferrer">Playbook</a>
+        <button id="unlock-solutions" type="button">Sblocca soluzioni</button>
+      </nav>
+    </div>
+    <div class="mission-card">
+      <span>Mission Readiness</span>
+      <strong id="readiness">0%</strong>
+      <meter id="readiness-meter" min="0" max="100" value="0">0%</meter>
+      <button id="reset-progress" type="button">Reset progressi</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section class="dashboard" id="overview" aria-label="Metriche principali">
+      <article class="score-hero">
+        <span>Punteggio totale</span>
+        <strong id="total-score">0</strong>
+        <small>Somma dei domini validati nei moduli</small>
+      </article>
+      <article>
+        <span>Cyber</span>
+        <strong id="score-cyber">0</strong>
+        <small>Malware, IOC, C2, hardening</small>
+      </article>
+      <article>
+        <span>Information</span>
+        <strong id="score-information">0</strong>
+        <small>Narrative, fonti, disinformazione</small>
+      </article>
+      <article>
+        <span>Cognitive</span>
+        <strong id="score-cognitive">0</strong>
+        <small>Fiducia, pressione, decisioni</small>
+      </article>
+      <article>
+        <span>Physical</span>
+        <strong id="score-physical">0</strong>
+        <small>Impatto operativo e continuita</small>
+      </article>
+    </section>
+
+    <section class="operations-grid" id="moduli" aria-label="Moduli CTF">
+      <aside class="module-tabs" aria-label="Selezione modulo">
+        <button class="tab active" type="button" data-module="hybrid">M1<br>Hybrid Warfare</button>
+        <button class="tab" type="button" data-module="malware">M2<br>Malware Analysis</button>
+        <button class="tab" type="button" data-module="final">M3<br>Final Brief</button>
+      </aside>
+
+      <section class="module-panel" aria-live="polite">
+        <div class="module-head">
+          <div>
+            <p class="eyebrow" id="module-kicker">Modulo 1</p>
+            <h2 id="module-title">Hybrid Warfare</h2>
+            <p id="module-mission" class="module-mission"></p>
+          </div>
+          <div class="module-score">
+            <span>Completamento</span>
+            <strong id="module-percent">0%</strong>
+          </div>
+        </div>
+
+        <div class="artifact-list" id="artifact-list"></div>
+
+        <div class="challenge-grid" id="challenge-grid"></div>
+      </section>
+    </section>
+
+    <section class="two-column">
+      <article class="timeline-panel" id="timeline">
+        <div class="panel-head">
+          <p class="eyebrow">Operational Timeline</p>
+          <h2>Evento ibrido simulato</h2>
+        </div>
+        <div class="timeline" id="timeline-list"></div>
+      </article>
+
+      <article class="score-log-panel" id="registro">
+        <div class="panel-head">
+          <p class="eyebrow">Activity Log</p>
+          <h2>Registro progressi</h2>
+        </div>
+        <div id="score-log"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Cyber-Social Security">
+    <img class="footer-banner" src="assets/logos/banner_CTF.png" alt="UniBa SERLAB SER&P CrASte">
+  </footer>
+
+  <template id="challenge-template">
+    <article class="challenge">
+      <div class="challenge-head">
+        <span class="badge"></span>
+        <strong class="challenge-title"></strong>
+      </div>
+      <p class="challenge-brief"></p>
+      <div class="evidence"></div>
+      <div class="tasks"></div>
+      <div class="domain-actions"></div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

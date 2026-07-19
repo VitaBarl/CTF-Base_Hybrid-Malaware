@@ -1,0 +1,5 @@
+timestamp,channel,message,confidence
+2026-07-08T04:10:00Z,med_ops_truth,"Leaked order proves unsafe patrol diversion.",medium
+2026-07-08T04:31:00Z,harbor_watch,"Drone video shows panic on coalition pier.",low
+2026-07-08T05:06:00Z,med_ops_truth,"AIS track confirms command lost control.",medium
+2026-07-08T05:18:00Z,local_port_news,"Port authority denies sabotage rumors.",high
